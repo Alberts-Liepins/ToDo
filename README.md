@@ -4,4 +4,5 @@ ToDo++ is a C++ based to-do list that notifies you when a you have something pla
 ## Developers
 - Renārs Gausiņš
 - Alberts Liepiņš
+- Alhasts Aidamirovs
 - Markuss Mišins
