@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QPushButton" name="upperClose">
+    <property name="geometry">
+     <rect>
+      <x>1192</x>
+      <y>5</y>
+      <width>80</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>X</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="upperMinimize">
+    <property name="geometry">
+     <rect>
+      <x>1005</x>
+      <y>5</y>
+      <width>80</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>_</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="upperMaximize">
+    <property name="geometry">
+     <rect>
+      <x>1096</x>
+      <y>5</y>
+      <width>80</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>O</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="upperTime">
+    <property name="geometry">
+     <rect>
+      <x>631</x>
+      <y>2</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>22</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>00:00</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="title">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>0</y>
+      <width>118</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>24</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>ToDo++</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="upperInfo">
+    <property name="geometry">
+     <rect>
+      <x>970</x>
+      <y>4</y>
+      <width>28</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="upperMenu">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>4</y>
+      <width>28</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="upperDate">
+    <property name="geometry">
+     <rect>
+      <x>703</x>
+      <y>6</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>12.12.2021</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="upperWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>0</y>
+      <width>1291</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: #FDFDFD;
+border: 5px solid rgba(0, 0, 0, 0.1);
+
+border-right: 0px solid white;
+border-left: 0px solid white;
+border-top: 0px solid white;</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="leftMenuWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>40</y>
+      <width>251</width>
+      <height>761</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 5px solid rgba(0, 0, 0, 0.1);
+
+border-top: 0px solid white;</string>
+    </property>
+    <widget class="QFrame" name="leftMenuFrame">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>0</y>
+       <width>241</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 5px solid rgba(0, 0, 0, 0.1);
+
+border-top: 0px solid white;
+border-right: 0px solid white;
+border-left: 0px solid white;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>37</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0px solid;
+color:rgba(160, 160, 160, 1);</string>
+      </property>
+      <property name="text">
+       <string>NickName</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>20</y>
+        <width>64</width>
+        <height>64</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:0px;
+color: black;
+background-color: grey;
+border-radius: 32px;</string>
+      </property>
+      <property name="text">
+       <string>BILDE</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="leftMenuFrame_2">
+     <property name="geometry">
+      <rect>
+       <x>25</x>
+       <y>120</y>
+       <width>201</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+
+
+border-right: 0px solid white;
+border-left: 0px solid white;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="leftMenuMainOptions">
+    <property name="geometry">
+     <rect>
+      <x>58</x>
+      <y>157</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgba(160, 160, 160, 1);
+border-bottom: 2px solid;</string>
+    </property>
+    <property name="text">
+     <string>Main Options</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="leftMenuTaskLogo">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>320</y>
+      <width>71</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonMenu">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>220</y>
+      <width>261</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#buttonMenu
+{
+	background-image: url(&quot;:./Resources/Img/Union.png&quot;);
+	background-repeat: no-repeat;
+	border: 0px solid white;
+	color: rgba(160, 160, 160, 1);
+	border-radius: 10px;
+}
+
+QPushButton:hover#buttonMenu
+{
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+    border-left: 6px solid rgba(59, 64, 65, 1);
+    background-color: rgba(225, 69, 69, 1);
+	color: rgba(59, 64, 65, 1);
+}</string>
+    </property>
+    <property name="text">
+     <string>Menu</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>60</y>
+      <width>641</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="1" column="1">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QWidget" name="statActive" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>133</width>
+           <height>143</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: white;
+border-radius: 7px;
+box-shadow: 10px 5px;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QWidget" name="statCompleted" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>133</width>
+           <height>143</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: white;
+border-radius: 7px;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QWidget" name="statsTasks" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>133</width>
+           <height>143</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: white;
+border-radius: 7px;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QWidget" name="statOverdue" native="true">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>133</width>
+           <height>143</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: white;
+border-radius: 7px;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="0" column="1">
+      <spacer name="statSpacer3">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="1" column="0">
+      <spacer name="statSpacer1">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="2" column="1">
+      <spacer name="statSpacer4">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="1" column="2">
+      <spacer name="statSpacer2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </widget>
+   <zorder>leftMenuWidget</zorder>
+   <zorder>upperWidget</zorder>
+   <zorder>upperClose</zorder>
+   <zorder>upperMinimize</zorder>
+   <zorder>upperMaximize</zorder>
+   <zorder>upperTime</zorder>
+   <zorder>title</zorder>
+   <zorder>upperInfo</zorder>
+   <zorder>upperMenu</zorder>
+   <zorder>upperDate</zorder>
+   <zorder>leftMenuMainOptions</zorder>
+   <zorder>leftMenuTaskLogo</zorder>
+   <zorder>buttonMenu</zorder>
+   <zorder>gridLayoutWidget</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
