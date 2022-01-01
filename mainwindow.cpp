@@ -5,10 +5,15 @@
 #include <QGraphicsDropShadowEffect>
 #include <QCursor>
 #include <QPoint>
+#include <ctime>
 
 MainWindow::MainWindow(QWidget *parent):QMainWindow(parent),ui(new Ui::MainWindow){
     ui->setupUi(this);
     this->setFixedSize(1280,800);
+
+    time = new Clock(this);
+    connect(time, SIGNAL(getTime(int,int)), this, SLOT(onTimeChanged(int,int)));
+    time->start();
 
     //Varbūt ir iespējams šo ar "findChild" ciklu kaut kādā veidā izdarīt, lai pēc kārtas izpildās effect izveidošana un pēc tam tās izvade widgetam.
     //pagaidām ir šādi, tas strādātu.
@@ -78,3 +83,9 @@ void MainWindow::on_upperMinimize_clicked(){
     this->setWindowState(Qt::WindowMinimized);
 }
 
+void MainWindow::onTimeChanged(int Hours, int Minutes)
+{
+    ui->upperTime->setText(QString("%1:%2 ").arg(QString::number(Hours, 10), QString::number(Minutes, 10)));
+//    ui->Hour->display(Hours);
+//    ui->Minutes->display(Minutes);
+}
