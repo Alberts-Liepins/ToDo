@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/Resources">
+        <file>Img/info.png</file>
+        <file>Img/Union.png</file>
+    </qresource>
+</RCC>
