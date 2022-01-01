@@ -46,6 +46,7 @@ MainWindow::MainWindow(QWidget *parent):QMainWindow(parent),ui(new Ui::MainWindo
     ui->statOverdue->setGraphicsEffect(effect4);
 }
 MainWindow::~MainWindow(){
+    time->stop = true;
     delete ui;
 }
 
@@ -85,7 +86,5 @@ void MainWindow::on_upperMinimize_clicked(){
 
 void MainWindow::onTimeChanged(int Hours, int Minutes)
 {
-    ui->upperTime->setText(QString("%1:%2 ").arg(QString::number(Hours, 10), QString::number(Minutes, 10)));
-//    ui->Hour->display(Hours);
-//    ui->Minutes->display(Minutes);
+    ui->upperTime->setText(QString("%1:%2").arg(QString::number(Hours, 10), QString::number(Minutes, 10)));
 }
