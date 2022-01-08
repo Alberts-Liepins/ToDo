@@ -1,6 +1,24 @@
 <RCC>
     <qresource prefix="/Resources">
         <file>Img/info.png</file>
-        <file>Img/Union.png</file>
+        <file>Img/Checklist.png</file>
+        <file>Img/Maximize.png</file>
+        <file>Img/ToDo++.png</file>
+        <file>Img/BurgerMenu.png</file>
+        <file>Img/Menu</file>
+        <file>Img/Close.png</file>
+        <file>Img/Minimize.png</file>
+        <file>Img/orangutanImageCropped.png</file>
+        <file>Img/orangutanImageUncropped.jpg</file>
+        <file>Img/information.png</file>
+        <file>Img/mainMenu.png</file>
+        <file>Img/settings.png</file>
+        <file>Img/task.png</file>
+        <file>Img/tasksPage.png</file>
+        <file>Img/bulletPoint.png</file>
+        <file>Img/checkMark.png</file>
+        <file>Img/pullDown.png</file>
+        <file>Img/taskCloseButton.svg</file>
+        <file>Img/taskCompleteButton.svg</file>
     </qresource>
 </RCC>

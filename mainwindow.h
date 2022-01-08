@@ -26,7 +26,6 @@ private slots:
 
     void on_upperMinimize_clicked();
 
-
 public slots:
     void onTimeChanged(int, int);
 
