@@ -20,42 +20,70 @@
    <property name="styleSheet">
     <string notr="true"/>
    </property>
-   <widget class="QWidget" name="upperWidget" native="true">
-    <property name="geometry">
-     <rect>
-      <x>-10</x>
-      <y>0</y>
-      <width>1291</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background: #FDFDFD;
-border-bottom: 3px solid rgba(0,0,0,0.07)</string>
-    </property>
-   </widget>
    <widget class="QWidget" name="gridLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>240</x>
+      <x>231</x>
       <y>40</y>
-      <width>681</width>
-      <height>217</height>
+      <width>691</width>
+      <height>233</height>
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout">
      <property name="leftMargin">
-      <number>30</number>
+      <number>33</number>
      </property>
      <property name="topMargin">
       <number>30</number>
      </property>
      <property name="rightMargin">
-      <number>30</number>
+      <number>35</number>
      </property>
      <property name="bottomMargin">
       <number>30</number>
      </property>
+     <property name="spacing">
+      <number>5</number>
+     </property>
+     <item row="1" column="0">
+      <spacer name="statSpacer1">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="1" column="2">
+      <spacer name="statSpacer2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="0" column="1">
+      <spacer name="statSpacer3">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
      <item row="1" column="1">
       <layout class="QHBoxLayout" name="horizontalLayout">
        <property name="spacing">
@@ -162,32 +190,6 @@ border-radius: 7px;</string>
        </item>
       </layout>
      </item>
-     <item row="0" column="1">
-      <spacer name="statSpacer3">
-       <property name="orientation">
-        <enum>Qt::Vertical</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>20</width>
-         <height>40</height>
-        </size>
-       </property>
-      </spacer>
-     </item>
-     <item row="1" column="0">
-      <spacer name="statSpacer1">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>40</width>
-         <height>20</height>
-        </size>
-       </property>
-      </spacer>
-     </item>
      <item row="2" column="1">
       <spacer name="statSpacer4">
        <property name="orientation">
@@ -201,26 +203,13 @@ border-radius: 7px;</string>
        </property>
       </spacer>
      </item>
-     <item row="1" column="2">
-      <spacer name="statSpacer2">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>40</width>
-         <height>20</height>
-        </size>
-       </property>
-      </spacer>
-     </item>
     </layout>
    </widget>
    <widget class="QPushButton" name="upperMaximize">
     <property name="geometry">
      <rect>
       <x>1210</x>
-      <y>8</y>
+      <y>10</y>
       <width>31</width>
       <height>31</height>
      </rect>
@@ -247,7 +236,7 @@ QPushButton:hover#upperMaximize{
     <property name="geometry">
      <rect>
       <x>1181</x>
-      <y>8</y>
+      <y>10</y>
       <width>31</width>
       <height>31</height>
      </rect>
@@ -274,7 +263,7 @@ QPushButton:hover#upperMinimize{
     <property name="geometry">
      <rect>
       <x>1240</x>
-      <y>8</y>
+      <y>10</y>
       <width>31</width>
       <height>31</height>
      </rect>
@@ -301,7 +290,7 @@ QPushButton:hover#upperClose{
     <property name="geometry">
      <rect>
       <x>1119</x>
-      <y>9</y>
+      <y>11</y>
       <width>27</width>
       <height>30</height>
      </rect>
@@ -327,7 +316,7 @@ QPushButton:hover#upperBurgerMenu{
     <property name="geometry">
      <rect>
       <x>1150</x>
-      <y>9</y>
+      <y>11</y>
       <width>26</width>
       <height>30</height>
      </rect>
@@ -463,6 +452,19 @@ QPushButton:hover#UpperMenu{
      <string notr="true">background: #FFFFFF;
 border-right: 3px solid rgba(0,0,0,0.07);</string>
     </property>
+    <widget class="QWidget" name="seperateBar_4" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>690</y>
+       <width>229</width>
+       <height>3</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(250, 250, 250);</string>
+     </property>
+    </widget>
    </widget>
    <widget class="QWidget" name="userImage" native="true">
     <property name="geometry">
@@ -567,673 +569,6 @@ border-right: 3px solid rgba(0,0,0,0.07);</string>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(250, 250, 250);</string>
     </property>
-   </widget>
-   <widget class="QWidget" name="taskCard" native="true">
-    <property name="geometry">
-     <rect>
-      <x>270</x>
-      <y>240</y>
-      <width>611</width>
-      <height>171</height>
-     </rect>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>133</width>
-      <height>143</height>
-     </size>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: white;
-border-radius:12px;</string>
-    </property>
-    <widget class="QLabel" name="userName_3">
-     <property name="geometry">
-      <rect>
-       <x>14</x>
-       <y>7</y>
-       <width>271</width>
-       <height>51</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>13</pointsize>
-       <italic>false</italic>
-       <bold>false</bold>
-      </font>
-     </property>
-     <property name="cursor">
-      <cursorShape>PointingHandCursor</cursorShape>
-     </property>
-     <property name="autoFillBackground">
-      <bool>false</bool>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color: rgb(146, 146, 146);</string>
-     </property>
-     <property name="text">
-      <string>Complete figma UI design and assign team tasks</string>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-     <property name="wordWrap">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QWidget" name="widget" native="true">
-     <property name="geometry">
-      <rect>
-       <x>14</x>
-       <y>74</y>
-       <width>12</width>
-       <height>12</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">image: url(:/Resources/Img/bulletPoint.png);</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="userName_4">
-     <property name="geometry">
-      <rect>
-       <x>31</x>
-       <y>67</y>
-       <width>251</width>
-       <height>43</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>12</pointsize>
-       <italic>false</italic>
-       <bold>false</bold>
-      </font>
-     </property>
-     <property name="autoFillBackground">
-      <bool>false</bool>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color: rgb(200, 200, 200);</string>
-     </property>
-     <property name="text">
-      <string>Complete figma UI design and assign team tasks</string>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-     <property name="wordWrap">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QWidget" name="widget_2" native="true">
-     <property name="geometry">
-      <rect>
-       <x>14</x>
-       <y>120</y>
-       <width>12</width>
-       <height>12</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">image: url(:/Resources/Img/bulletPoint.png);</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="userName_5">
-     <property name="geometry">
-      <rect>
-       <x>31</x>
-       <y>113</y>
-       <width>251</width>
-       <height>43</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>12</pointsize>
-       <italic>false</italic>
-       <bold>false</bold>
-      </font>
-     </property>
-     <property name="autoFillBackground">
-      <bool>false</bool>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color: rgb(200, 200, 200);</string>
-     </property>
-     <property name="text">
-      <string>Complete figma UI design and assign team tasks</string>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-     <property name="wordWrap">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QWidget" name="widget_3" native="true">
-     <property name="geometry">
-      <rect>
-       <x>329</x>
-       <y>120</y>
-       <width>12</width>
-       <height>12</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">image: url(:/Resources/Img/bulletPoint.png);</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="userName_6">
-     <property name="geometry">
-      <rect>
-       <x>346</x>
-       <y>113</y>
-       <width>251</width>
-       <height>43</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>12</pointsize>
-       <italic>false</italic>
-       <bold>false</bold>
-      </font>
-     </property>
-     <property name="autoFillBackground">
-      <bool>false</bool>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color: rgb(200, 200, 200);</string>
-     </property>
-     <property name="text">
-      <string>Complete figma UI design and assign team tasks</string>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-     <property name="wordWrap">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QProgressBar" name="progressBar">
-     <property name="geometry">
-      <rect>
-       <x>293</x>
-       <y>40</y>
-       <width>291</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QProgressBar:horizontal {
-	border-radius: 8px;
-	background: rgb(245, 245, 245);
-	padding: 0px;
-}
-
-QProgressBar::chunk:horizontal {
-	border-radius: 8px;
-	background: qlineargradient(	x1: 0, y1: 0,
-														x2: 0, y2: 1, 
-														stop: 0 rgb(48, 98, 156), 
-														stop: 1 rgb(54, 111, 176));
-}</string>
-     </property>
-     <property name="value">
-      <number>24</number>
-     </property>
-     <property name="textVisible">
-      <bool>false</bool>
-     </property>
-     <property name="invertedAppearance">
-      <bool>false</bool>
-     </property>
-    </widget>
-    <widget class="QWidget" name="seperateBar_4" native="true">
-     <property name="geometry">
-      <rect>
-       <x>303</x>
-       <y>52</y>
-       <width>2</width>
-       <height>48</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(48, 98, 156);;</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="userName_7">
-     <property name="geometry">
-      <rect>
-       <x>308</x>
-       <y>53</y>
-       <width>101</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-       <italic>false</italic>
-       <bold>false</bold>
-      </font>
-     </property>
-     <property name="autoFillBackground">
-      <bool>false</bool>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color: rgb(140, 140, 140);
-background-color: rgba(255, 255, 255, 0);</string>
-     </property>
-     <property name="text">
-      <string>Task created</string>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-     <property name="wordWrap">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QLabel" name="userName_8">
-     <property name="geometry">
-      <rect>
-       <x>310</x>
-       <y>71</y>
-       <width>101</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>9</pointsize>
-       <italic>false</italic>
-       <bold>false</bold>
-      </font>
-     </property>
-     <property name="layoutDirection">
-      <enum>Qt::LeftToRight</enum>
-     </property>
-     <property name="autoFillBackground">
-      <bool>false</bool>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color: rgb(180, 180, 180);
-background-color: rgba(255, 255, 255, 0);</string>
-     </property>
-     <property name="text">
-      <string>29.12.21</string>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-     <property name="wordWrap">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QLabel" name="userName_9">
-     <property name="geometry">
-      <rect>
-       <x>310</x>
-       <y>85</y>
-       <width>41</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>9</pointsize>
-       <italic>false</italic>
-       <bold>false</bold>
-      </font>
-     </property>
-     <property name="layoutDirection">
-      <enum>Qt::LeftToRight</enum>
-     </property>
-     <property name="autoFillBackground">
-      <bool>false</bool>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color: rgb(180, 180, 180);
-background-color: rgba(255, 255, 255, 0);</string>
-     </property>
-     <property name="text">
-      <string>17:25</string>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-     <property name="wordWrap">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QLabel" name="userName_10">
-     <property name="geometry">
-      <rect>
-       <x>499</x>
-       <y>55</y>
-       <width>101</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-       <italic>false</italic>
-       <bold>false</bold>
-      </font>
-     </property>
-     <property name="autoFillBackground">
-      <bool>false</bool>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color: rgb(140, 140, 140);
-background-color: rgba(255, 255, 255, 0);</string>
-     </property>
-     <property name="text">
-      <string>Reminder</string>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-     <property name="wordWrap">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QLabel" name="userName_11">
-     <property name="geometry">
-      <rect>
-       <x>501</x>
-       <y>73</y>
-       <width>101</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>9</pointsize>
-       <italic>false</italic>
-       <bold>false</bold>
-      </font>
-     </property>
-     <property name="layoutDirection">
-      <enum>Qt::LeftToRight</enum>
-     </property>
-     <property name="autoFillBackground">
-      <bool>false</bool>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color: rgb(180, 180, 180);
-background-color: rgba(255, 255, 255, 0);</string>
-     </property>
-     <property name="text">
-      <string>02.01.22</string>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-     <property name="wordWrap">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QLabel" name="userName_12">
-     <property name="geometry">
-      <rect>
-       <x>501</x>
-       <y>87</y>
-       <width>41</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>9</pointsize>
-       <italic>false</italic>
-       <bold>false</bold>
-      </font>
-     </property>
-     <property name="layoutDirection">
-      <enum>Qt::LeftToRight</enum>
-     </property>
-     <property name="autoFillBackground">
-      <bool>false</bool>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color: rgb(180, 180, 180);
-background-color: rgba(255, 255, 255, 0);</string>
-     </property>
-     <property name="text">
-      <string>17:25</string>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-     <property name="wordWrap">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QWidget" name="seperateBar_5" native="true">
-     <property name="geometry">
-      <rect>
-       <x>494</x>
-       <y>54</y>
-       <width>2</width>
-       <height>48</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(48, 98, 156);;</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="userName_13">
-     <property name="geometry">
-      <rect>
-       <x>300</x>
-       <y>12</y>
-       <width>51</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>12</pointsize>
-       <italic>false</italic>
-       <bold>false</bold>
-      </font>
-     </property>
-     <property name="autoFillBackground">
-      <bool>false</bool>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color: rgb(205, 205, 205);</string>
-     </property>
-     <property name="text">
-      <string>Due by</string>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-     <property name="wordWrap">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QLabel" name="userName_14">
-     <property name="geometry">
-      <rect>
-       <x>355</x>
-       <y>16</y>
-       <width>151</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>13</pointsize>
-       <italic>false</italic>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="autoFillBackground">
-      <bool>false</bool>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color: rgb(103, 215, 84);</string>
-     </property>
-     <property name="text">
-      <string>Wednesday 12:30</string>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-     <property name="wordWrap">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="taskCompleteButton">
-     <property name="geometry">
-      <rect>
-       <x>509</x>
-       <y>0</y>
-       <width>51</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="cursor">
-      <cursorShape>PointingHandCursor</cursorShape>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QPushButton#taskCompleteButton{
-	border: none;
-	outline: none;
-	
-	image: url(:/Resources/Img/taskCompleteButton.svg);
-	background-color: rgba(0,0,0,0);
-}
-
-QPushButton:hover#taskCompleteButton{
-	margin-top: -2px;
-}
-
-
-QPushButton:pressed#taskCompleteButton{
-	margin-top: -4px;
-}</string>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="taskDismissButton">
-     <property name="geometry">
-      <rect>
-       <x>560</x>
-       <y>0</y>
-       <width>51</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="cursor">
-      <cursorShape>PointingHandCursor</cursorShape>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QPushButton#taskDismissButton{
-	border: none;
-	outline: none;
-	
-	image: url(:/Resources/Img/taskCloseButton.svg);
-
-	background-color: rgba(0,0,0,0);
-}
-
-QPushButton:hover#taskDismissButton{
-	margin-top: -2px;
-}
-
-
-QPushButton:pressed#taskDismissButton{
-	margin-top: -4px;
-}</string>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="taskBottomOpenButton">
-     <property name="geometry">
-      <rect>
-       <x>285</x>
-       <y>150</y>
-       <width>41</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="cursor">
-      <cursorShape>PointingHandCursor</cursorShape>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QPushButton#taskBottomOpenButton{
-	border: none;
-	outline: none;
-	
-	image: url(:/Resources/Img/pullDown.png);
-	background-color: rgba(0,0,0,0);
-}
-
-QPushButton:hover#taskBottomOpenButton{
-	margin-bottom: 2px;
-}
-
-
-QPushButton:pressed#taskBottomOpenButton{
-	margin-bottom: 4px;
-}</string>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QWidget" name="seperateBar_6" native="true">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>60</y>
-       <width>260</width>
-       <height>2</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(48, 98, 156);;</string>
-     </property>
-    </widget>
-    <zorder>userName_3</zorder>
-    <zorder>widget</zorder>
-    <zorder>userName_4</zorder>
-    <zorder>widget_2</zorder>
-    <zorder>userName_5</zorder>
-    <zorder>widget_3</zorder>
-    <zorder>userName_6</zorder>
-    <zorder>seperateBar_4</zorder>
-    <zorder>userName_7</zorder>
-    <zorder>userName_8</zorder>
-    <zorder>userName_9</zorder>
-    <zorder>userName_10</zorder>
-    <zorder>userName_11</zorder>
-    <zorder>userName_12</zorder>
-    <zorder>seperateBar_5</zorder>
-    <zorder>userName_13</zorder>
-    <zorder>userName_14</zorder>
-    <zorder>taskCompleteButton</zorder>
-    <zorder>taskDismissButton</zorder>
-    <zorder>taskBottomOpenButton</zorder>
-    <zorder>progressBar</zorder>
-    <zorder>seperateBar_6</zorder>
    </widget>
    <widget class="QFrame" name="sideMenuTasks">
     <property name="geometry">
@@ -1620,6 +955,3326 @@ QPushButton:pressed#buttonOverview{
     <zorder>buttonOverview</zorder>
     <zorder>imageOverview</zorder>
    </widget>
+   <widget class="QWidget" name="upperWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1291</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: #FDFDFD;
+border-bottom: 3px solid rgba(0,0,0,0.07)</string>
+    </property>
+   </widget>
+   <widget class="QScrollArea" name="scrollArea">
+    <property name="geometry">
+     <rect>
+      <x>259</x>
+      <y>250</y>
+      <width>636</width>
+      <height>511</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="baseSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="acceptDrops">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QScrollArea#scrollArea{
+	border: none;
+}
+
+QScrollBar:vertical {
+    background: rgb(194, 205, 217);
+    width: 5px;
+    margin: 15px 0 15px 0;
+	border-radius: 0px;
+ }
+
+QScrollBar::handle:vertical {	
+	background-color: rgb(50, 102, 163);
+	min-height: 30px;
+	border-radius: 2px;
+}
+
+QScrollBar::handle:vertical:hover{	
+	background-color: rgb(35, 68, 129);
+}
+
+QScrollBar::handle:vertical:pressed {	
+	background-color: rgb(25, 60, 120);
+}
+
+QScrollBar::sub-line:vertical {
+	background-color: none;
+}
+
+QScrollBar::add-line:vertical {
+	background-color: none;
+}
+</string>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOn</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="sizeAdjustPolicy">
+     <enum>QAbstractScrollArea::AdjustToContents</enum>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>631</width>
+       <height>900</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <property name="spacing">
+         <number>10</number>
+        </property>
+        <property name="sizeConstraint">
+         <enum>QLayout::SetFixedSize</enum>
+        </property>
+        <item>
+         <widget class="QWidget" name="taskCard_2" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>133</width>
+            <height>168</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: white;
+border-radius:12px;</string>
+          </property>
+          <widget class="QLabel" name="userName_15">
+           <property name="geometry">
+            <rect>
+             <x>14</x>
+             <y>7</y>
+             <width>271</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(146, 146, 146);</string>
+           </property>
+           <property name="text">
+            <string>Complete figma UI design and assign team tasks</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QWidget" name="widget_4" native="true">
+           <property name="geometry">
+            <rect>
+             <x>14</x>
+             <y>74</y>
+             <width>12</width>
+             <height>12</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image: url(:/Resources/Img/bulletPoint.png);</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_16">
+           <property name="geometry">
+            <rect>
+             <x>31</x>
+             <y>67</y>
+             <width>251</width>
+             <height>43</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(200, 200, 200);</string>
+           </property>
+           <property name="text">
+            <string>Complete figma UI design and assign team tasks</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QWidget" name="widget_5" native="true">
+           <property name="geometry">
+            <rect>
+             <x>14</x>
+             <y>120</y>
+             <width>12</width>
+             <height>12</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image: url(:/Resources/Img/bulletPoint.png);</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_17">
+           <property name="geometry">
+            <rect>
+             <x>31</x>
+             <y>113</y>
+             <width>251</width>
+             <height>43</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(200, 200, 200);</string>
+           </property>
+           <property name="text">
+            <string>Complete figma UI design and assign team tasks</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QWidget" name="widget_6" native="true">
+           <property name="geometry">
+            <rect>
+             <x>329</x>
+             <y>120</y>
+             <width>12</width>
+             <height>12</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image: url(:/Resources/Img/bulletPoint.png);</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_18">
+           <property name="geometry">
+            <rect>
+             <x>346</x>
+             <y>113</y>
+             <width>251</width>
+             <height>43</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(200, 200, 200);</string>
+           </property>
+           <property name="text">
+            <string>Complete figma UI design and assign team tasks</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QProgressBar" name="progressBar_2">
+           <property name="geometry">
+            <rect>
+             <x>293</x>
+             <y>40</y>
+             <width>291</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QProgressBar:horizontal {
+	border-radius: 8px;
+	background: rgb(245, 245, 245);
+	padding: 0px;
+}
+
+QProgressBar::chunk:horizontal {
+	border-radius: 8px;
+	background: qlineargradient(	x1: 0, y1: 0,
+														x2: 0, y2: 1, 
+														stop: 0 rgb(48, 98, 156), 
+														stop: 1 rgb(54, 111, 176));
+}</string>
+           </property>
+           <property name="value">
+            <number>24</number>
+           </property>
+           <property name="textVisible">
+            <bool>false</bool>
+           </property>
+           <property name="invertedAppearance">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <widget class="QWidget" name="seperateBar_7" native="true">
+           <property name="geometry">
+            <rect>
+             <x>303</x>
+             <y>52</y>
+             <width>2</width>
+             <height>48</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(48, 98, 156);;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_19">
+           <property name="geometry">
+            <rect>
+             <x>308</x>
+             <y>53</y>
+             <width>101</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(140, 140, 140);
+background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>Task created</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_20">
+           <property name="geometry">
+            <rect>
+             <x>310</x>
+             <y>71</y>
+             <width>101</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(180, 180, 180);
+background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>29.12.21</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_21">
+           <property name="geometry">
+            <rect>
+             <x>310</x>
+             <y>85</y>
+             <width>41</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(180, 180, 180);
+background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>17:25</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_22">
+           <property name="geometry">
+            <rect>
+             <x>499</x>
+             <y>55</y>
+             <width>101</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(140, 140, 140);
+background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>Reminder</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_23">
+           <property name="geometry">
+            <rect>
+             <x>501</x>
+             <y>73</y>
+             <width>101</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(180, 180, 180);
+background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>02.01.22</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_24">
+           <property name="geometry">
+            <rect>
+             <x>501</x>
+             <y>87</y>
+             <width>41</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(180, 180, 180);
+background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>17:25</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QWidget" name="seperateBar_8" native="true">
+           <property name="geometry">
+            <rect>
+             <x>494</x>
+             <y>54</y>
+             <width>2</width>
+             <height>48</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(48, 98, 156);;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_25">
+           <property name="geometry">
+            <rect>
+             <x>300</x>
+             <y>12</y>
+             <width>51</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(205, 205, 205);
+background-color:none;</string>
+           </property>
+           <property name="text">
+            <string>Due by</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_26">
+           <property name="geometry">
+            <rect>
+             <x>355</x>
+             <y>16</y>
+             <width>151</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(103, 215, 84);</string>
+           </property>
+           <property name="text">
+            <string>Wednesday 12:30</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="taskCompleteButton_2">
+           <property name="geometry">
+            <rect>
+             <x>509</x>
+             <y>0</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton#taskCompleteButton_2{
+	border: none;
+	outline: none;
+	
+	image: url(:/Resources/Img/taskCompleteButton.svg);
+	background-color: rgba(0,0,0,0);
+}
+
+QPushButton:hover#taskCompleteButton_2{
+	margin-top: -2px;
+}
+
+
+QPushButton:pressed#taskCompleteButton_2{
+	margin-top: -4px;
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="taskDismissButton_2">
+           <property name="geometry">
+            <rect>
+             <x>560</x>
+             <y>0</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton#taskDismissButton_2{
+	border: none;
+	outline: none;
+	
+	image: url(:/Resources/Img/taskCloseButton.svg);
+
+	background-color: rgba(0,0,0,0);
+}
+
+QPushButton:hover#taskDismissButton_2{
+	margin-top: -2px;
+}
+
+
+QPushButton:pressed#taskDismissButton_2{
+	margin-top: -4px;
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="taskBottomOpenButton_2">
+           <property name="geometry">
+            <rect>
+             <x>285</x>
+             <y>150</y>
+             <width>41</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton#taskBottomOpenButton_2{
+	border: none;
+	outline: none;
+	
+	image: url(:/Resources/Img/pullDown.png);
+	background-color: rgba(0,0,0,0);
+}
+
+QPushButton:hover#taskBottomOpenButton_2{
+	margin-bottom: 2px;
+}
+
+
+QPushButton:pressed#taskBottomOpenButton_2{
+	margin-bottom: 4px;
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QWidget" name="seperateBar_9" native="true">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>60</y>
+             <width>260</width>
+             <height>2</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(48, 98, 156);;</string>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="taskCard_1" native="true">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>133</width>
+            <height>168</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: white;
+border-radius:12px;</string>
+          </property>
+          <widget class="QLabel" name="userName_111">
+           <property name="geometry">
+            <rect>
+             <x>14</x>
+             <y>7</y>
+             <width>271</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(146, 146, 146);</string>
+           </property>
+           <property name="text">
+            <string>Complete figma UI design and assign team tasks</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QWidget" name="widget_29" native="true">
+           <property name="geometry">
+            <rect>
+             <x>14</x>
+             <y>74</y>
+             <width>12</width>
+             <height>12</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image: url(:/Resources/Img/bulletPoint.png);</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_112">
+           <property name="geometry">
+            <rect>
+             <x>31</x>
+             <y>67</y>
+             <width>251</width>
+             <height>43</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(200, 200, 200);</string>
+           </property>
+           <property name="text">
+            <string>Complete figma UI design and assign team tasks</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QWidget" name="widget_30" native="true">
+           <property name="geometry">
+            <rect>
+             <x>14</x>
+             <y>120</y>
+             <width>12</width>
+             <height>12</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image: url(:/Resources/Img/bulletPoint.png);</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_113">
+           <property name="geometry">
+            <rect>
+             <x>31</x>
+             <y>113</y>
+             <width>251</width>
+             <height>43</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(200, 200, 200);</string>
+           </property>
+           <property name="text">
+            <string>Complete figma UI design and assign team tasks</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QWidget" name="widget_31" native="true">
+           <property name="geometry">
+            <rect>
+             <x>329</x>
+             <y>120</y>
+             <width>12</width>
+             <height>12</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image: url(:/Resources/Img/bulletPoint.png);</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_114">
+           <property name="geometry">
+            <rect>
+             <x>346</x>
+             <y>113</y>
+             <width>251</width>
+             <height>43</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(200, 200, 200);</string>
+           </property>
+           <property name="text">
+            <string>Complete figma UI design and assign team tasks</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QProgressBar" name="progressBar_10">
+           <property name="geometry">
+            <rect>
+             <x>293</x>
+             <y>40</y>
+             <width>291</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QProgressBar:horizontal {
+	border-radius: 8px;
+	background: rgb(245, 245, 245);
+	padding: 0px;
+}
+
+QProgressBar::chunk:horizontal {
+	border-radius: 8px;
+	background: qlineargradient(	x1: 0, y1: 0,
+														x2: 0, y2: 1, 
+														stop: 0 rgb(48, 98, 156), 
+														stop: 1 rgb(54, 111, 176));
+}</string>
+           </property>
+           <property name="value">
+            <number>24</number>
+           </property>
+           <property name="textVisible">
+            <bool>false</bool>
+           </property>
+           <property name="invertedAppearance">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <widget class="QWidget" name="seperateBar_31" native="true">
+           <property name="geometry">
+            <rect>
+             <x>303</x>
+             <y>52</y>
+             <width>2</width>
+             <height>48</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(48, 98, 156);;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_115">
+           <property name="geometry">
+            <rect>
+             <x>308</x>
+             <y>53</y>
+             <width>101</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(140, 140, 140);
+background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>Task created</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_116">
+           <property name="geometry">
+            <rect>
+             <x>310</x>
+             <y>71</y>
+             <width>101</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(180, 180, 180);
+background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>29.12.21</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_117">
+           <property name="geometry">
+            <rect>
+             <x>310</x>
+             <y>85</y>
+             <width>41</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(180, 180, 180);
+background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>17:25</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_118">
+           <property name="geometry">
+            <rect>
+             <x>499</x>
+             <y>55</y>
+             <width>101</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(140, 140, 140);
+background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>Reminder</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_119">
+           <property name="geometry">
+            <rect>
+             <x>501</x>
+             <y>73</y>
+             <width>101</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(180, 180, 180);
+background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>02.01.22</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_120">
+           <property name="geometry">
+            <rect>
+             <x>501</x>
+             <y>87</y>
+             <width>41</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(180, 180, 180);
+background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>17:25</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QWidget" name="seperateBar_32" native="true">
+           <property name="geometry">
+            <rect>
+             <x>494</x>
+             <y>54</y>
+             <width>2</width>
+             <height>48</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(48, 98, 156);;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_121">
+           <property name="geometry">
+            <rect>
+             <x>300</x>
+             <y>12</y>
+             <width>51</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(205, 205, 205);
+background-color:none;</string>
+           </property>
+           <property name="text">
+            <string>Due by</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_122">
+           <property name="geometry">
+            <rect>
+             <x>355</x>
+             <y>16</y>
+             <width>151</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(103, 215, 84);</string>
+           </property>
+           <property name="text">
+            <string>Wednesday 12:30</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="taskCompleteButton_10">
+           <property name="geometry">
+            <rect>
+             <x>509</x>
+             <y>0</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton#taskCompleteButton_10{
+	border: none;
+	outline: none;
+	
+	image: url(:/Resources/Img/taskCompleteButton.svg);
+	background-color: rgba(0,0,0,0);
+}
+
+QPushButton:hover#taskCompleteButton_10{
+	margin-top: -2px;
+}
+
+
+QPushButton:pressed#taskCompleteButton_10{
+	margin-top: -4px;
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="taskDismissButton_10">
+           <property name="geometry">
+            <rect>
+             <x>560</x>
+             <y>0</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton#taskDismissButton_10{
+	border: none;
+	outline: none;
+	
+	image: url(:/Resources/Img/taskCloseButton.svg);
+
+	background-color: rgba(0,0,0,0);
+}
+
+QPushButton:hover#taskDismissButton_10{
+	margin-top: -2px;
+}
+
+
+QPushButton:pressed#taskDismissButton_10{
+	margin-top: -4px;
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="taskBottomOpenButton_10">
+           <property name="geometry">
+            <rect>
+             <x>285</x>
+             <y>150</y>
+             <width>41</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton#taskBottomOpenButton_10{
+	border: none;
+	outline: none;
+	
+	image: url(:/Resources/Img/pullDown.png);
+	background-color: rgba(0,0,0,0);
+}
+
+QPushButton:hover#taskBottomOpenButton_10{
+	margin-bottom: 2px;
+}
+
+
+QPushButton:pressed#taskBottomOpenButton_10{
+	margin-bottom: 4px;
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QWidget" name="seperateBar_33" native="true">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>60</y>
+             <width>260</width>
+             <height>2</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(48, 98, 156);;</string>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="taskCard_5" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>133</width>
+            <height>168</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: white;
+border-radius:12px;</string>
+          </property>
+          <widget class="QLabel" name="userName_39">
+           <property name="geometry">
+            <rect>
+             <x>14</x>
+             <y>7</y>
+             <width>271</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(146, 146, 146);</string>
+           </property>
+           <property name="text">
+            <string>Complete figma UI design and assign team tasks</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QWidget" name="widget_10" native="true">
+           <property name="geometry">
+            <rect>
+             <x>14</x>
+             <y>74</y>
+             <width>12</width>
+             <height>12</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image: url(:/Resources/Img/bulletPoint.png);</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_40">
+           <property name="geometry">
+            <rect>
+             <x>31</x>
+             <y>67</y>
+             <width>251</width>
+             <height>43</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(200, 200, 200);</string>
+           </property>
+           <property name="text">
+            <string>Complete figma UI design and assign team tasks</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QWidget" name="widget_11" native="true">
+           <property name="geometry">
+            <rect>
+             <x>14</x>
+             <y>120</y>
+             <width>12</width>
+             <height>12</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image: url(:/Resources/Img/bulletPoint.png);</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_41">
+           <property name="geometry">
+            <rect>
+             <x>31</x>
+             <y>113</y>
+             <width>251</width>
+             <height>43</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(200, 200, 200);</string>
+           </property>
+           <property name="text">
+            <string>Complete figma UI design and assign team tasks</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QWidget" name="widget_12" native="true">
+           <property name="geometry">
+            <rect>
+             <x>329</x>
+             <y>120</y>
+             <width>12</width>
+             <height>12</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image: url(:/Resources/Img/bulletPoint.png);</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_42">
+           <property name="geometry">
+            <rect>
+             <x>346</x>
+             <y>113</y>
+             <width>251</width>
+             <height>43</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(200, 200, 200);</string>
+           </property>
+           <property name="text">
+            <string>Complete figma UI design and assign team tasks</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QProgressBar" name="progressBar_4">
+           <property name="geometry">
+            <rect>
+             <x>293</x>
+             <y>40</y>
+             <width>291</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QProgressBar:horizontal {
+	border-radius: 8px;
+	background: rgb(245, 245, 245);
+	padding: 0px;
+}
+
+QProgressBar::chunk:horizontal {
+	border-radius: 8px;
+	background: qlineargradient(	x1: 0, y1: 0,
+														x2: 0, y2: 1, 
+														stop: 0 rgb(48, 98, 156), 
+														stop: 1 rgb(54, 111, 176));
+}</string>
+           </property>
+           <property name="value">
+            <number>24</number>
+           </property>
+           <property name="textVisible">
+            <bool>false</bool>
+           </property>
+           <property name="invertedAppearance">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <widget class="QWidget" name="seperateBar_13" native="true">
+           <property name="geometry">
+            <rect>
+             <x>303</x>
+             <y>52</y>
+             <width>2</width>
+             <height>48</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(48, 98, 156);;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_43">
+           <property name="geometry">
+            <rect>
+             <x>308</x>
+             <y>53</y>
+             <width>101</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(140, 140, 140);
+background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>Task created</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_44">
+           <property name="geometry">
+            <rect>
+             <x>310</x>
+             <y>71</y>
+             <width>101</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(180, 180, 180);
+background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>29.12.21</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_45">
+           <property name="geometry">
+            <rect>
+             <x>310</x>
+             <y>85</y>
+             <width>41</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(180, 180, 180);
+background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>17:25</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_46">
+           <property name="geometry">
+            <rect>
+             <x>499</x>
+             <y>55</y>
+             <width>101</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(140, 140, 140);
+background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>Reminder</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_47">
+           <property name="geometry">
+            <rect>
+             <x>501</x>
+             <y>73</y>
+             <width>101</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(180, 180, 180);
+background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>02.01.22</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_48">
+           <property name="geometry">
+            <rect>
+             <x>501</x>
+             <y>87</y>
+             <width>41</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(180, 180, 180);
+background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>17:25</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QWidget" name="seperateBar_14" native="true">
+           <property name="geometry">
+            <rect>
+             <x>494</x>
+             <y>54</y>
+             <width>2</width>
+             <height>48</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(48, 98, 156);;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_49">
+           <property name="geometry">
+            <rect>
+             <x>300</x>
+             <y>12</y>
+             <width>51</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(205, 205, 205);
+background-color:none;</string>
+           </property>
+           <property name="text">
+            <string>Due by</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_50">
+           <property name="geometry">
+            <rect>
+             <x>355</x>
+             <y>16</y>
+             <width>151</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(103, 215, 84);</string>
+           </property>
+           <property name="text">
+            <string>Wednesday 12:30</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="taskCompleteButton_4">
+           <property name="geometry">
+            <rect>
+             <x>509</x>
+             <y>0</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton#taskCompleteButton_4{
+	border: none;
+	outline: none;
+	
+	image: url(:/Resources/Img/taskCompleteButton.svg);
+	background-color: rgba(0,0,0,0);
+}
+
+QPushButton:hover#taskCompleteButton_4{
+	margin-top: -2px;
+}
+
+
+QPushButton:pressed#taskCompleteButton_4{
+	margin-top: -4px;
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="taskDismissButton_4">
+           <property name="geometry">
+            <rect>
+             <x>560</x>
+             <y>0</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton#taskDismissButton_4{
+	border: none;
+	outline: none;
+	
+	image: url(:/Resources/Img/taskCloseButton.svg);
+
+	background-color: rgba(0,0,0,0);
+}
+
+QPushButton:hover#taskDismissButton_4{
+	margin-top: -2px;
+}
+
+
+QPushButton:pressed#taskDismissButton_4{
+	margin-top: -4px;
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="taskBottomOpenButton_4">
+           <property name="geometry">
+            <rect>
+             <x>285</x>
+             <y>150</y>
+             <width>41</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton#taskBottomOpenButton_4{
+	border: none;
+	outline: none;
+	
+	image: url(:/Resources/Img/pullDown.png);
+	background-color: rgba(0,0,0,0);
+}
+
+QPushButton:hover#taskBottomOpenButton_4{
+	margin-bottom: 2px;
+}
+
+
+QPushButton:pressed#taskBottomOpenButton_4{
+	margin-bottom: 4px;
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QWidget" name="seperateBar_15" native="true">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>60</y>
+             <width>260</width>
+             <height>2</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(48, 98, 156);;</string>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="taskCard_3" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>133</width>
+            <height>168</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: white;
+border-radius:12px;</string>
+          </property>
+          <widget class="QLabel" name="userName_123">
+           <property name="geometry">
+            <rect>
+             <x>14</x>
+             <y>7</y>
+             <width>271</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(146, 146, 146);</string>
+           </property>
+           <property name="text">
+            <string>Complete figma UI design and assign team tasks</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QWidget" name="widget_32" native="true">
+           <property name="geometry">
+            <rect>
+             <x>14</x>
+             <y>74</y>
+             <width>12</width>
+             <height>12</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image: url(:/Resources/Img/bulletPoint.png);</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_124">
+           <property name="geometry">
+            <rect>
+             <x>31</x>
+             <y>67</y>
+             <width>251</width>
+             <height>43</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(200, 200, 200);</string>
+           </property>
+           <property name="text">
+            <string>Complete figma UI design and assign team tasks</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QWidget" name="widget_33" native="true">
+           <property name="geometry">
+            <rect>
+             <x>14</x>
+             <y>120</y>
+             <width>12</width>
+             <height>12</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image: url(:/Resources/Img/bulletPoint.png);</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_125">
+           <property name="geometry">
+            <rect>
+             <x>31</x>
+             <y>113</y>
+             <width>251</width>
+             <height>43</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(200, 200, 200);</string>
+           </property>
+           <property name="text">
+            <string>Complete figma UI design and assign team tasks</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QWidget" name="widget_34" native="true">
+           <property name="geometry">
+            <rect>
+             <x>329</x>
+             <y>120</y>
+             <width>12</width>
+             <height>12</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image: url(:/Resources/Img/bulletPoint.png);</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_126">
+           <property name="geometry">
+            <rect>
+             <x>346</x>
+             <y>113</y>
+             <width>251</width>
+             <height>43</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(200, 200, 200);</string>
+           </property>
+           <property name="text">
+            <string>Complete figma UI design and assign team tasks</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QProgressBar" name="progressBar_11">
+           <property name="geometry">
+            <rect>
+             <x>293</x>
+             <y>40</y>
+             <width>291</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QProgressBar:horizontal {
+	border-radius: 8px;
+	background: rgb(245, 245, 245);
+	padding: 0px;
+}
+
+QProgressBar::chunk:horizontal {
+	border-radius: 8px;
+	background: qlineargradient(	x1: 0, y1: 0,
+														x2: 0, y2: 1, 
+														stop: 0 rgb(48, 98, 156), 
+														stop: 1 rgb(54, 111, 176));
+}</string>
+           </property>
+           <property name="value">
+            <number>24</number>
+           </property>
+           <property name="textVisible">
+            <bool>false</bool>
+           </property>
+           <property name="invertedAppearance">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <widget class="QWidget" name="seperateBar_34" native="true">
+           <property name="geometry">
+            <rect>
+             <x>303</x>
+             <y>52</y>
+             <width>2</width>
+             <height>48</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(48, 98, 156);;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_127">
+           <property name="geometry">
+            <rect>
+             <x>308</x>
+             <y>53</y>
+             <width>101</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(140, 140, 140);
+background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>Task created</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_128">
+           <property name="geometry">
+            <rect>
+             <x>310</x>
+             <y>71</y>
+             <width>101</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(180, 180, 180);
+background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>29.12.21</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_129">
+           <property name="geometry">
+            <rect>
+             <x>310</x>
+             <y>85</y>
+             <width>41</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(180, 180, 180);
+background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>17:25</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_130">
+           <property name="geometry">
+            <rect>
+             <x>499</x>
+             <y>55</y>
+             <width>101</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(140, 140, 140);
+background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>Reminder</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_131">
+           <property name="geometry">
+            <rect>
+             <x>501</x>
+             <y>73</y>
+             <width>101</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(180, 180, 180);
+background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>02.01.22</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_132">
+           <property name="geometry">
+            <rect>
+             <x>501</x>
+             <y>87</y>
+             <width>41</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(180, 180, 180);
+background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>17:25</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QWidget" name="seperateBar_35" native="true">
+           <property name="geometry">
+            <rect>
+             <x>494</x>
+             <y>54</y>
+             <width>2</width>
+             <height>48</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(48, 98, 156);;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_133">
+           <property name="geometry">
+            <rect>
+             <x>300</x>
+             <y>12</y>
+             <width>51</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(205, 205, 205);
+background-color:none;</string>
+           </property>
+           <property name="text">
+            <string>Due by</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_134">
+           <property name="geometry">
+            <rect>
+             <x>355</x>
+             <y>16</y>
+             <width>151</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(103, 215, 84);</string>
+           </property>
+           <property name="text">
+            <string>Wednesday 12:30</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="taskCompleteButton_11">
+           <property name="geometry">
+            <rect>
+             <x>509</x>
+             <y>0</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton#taskCompleteButton_11{
+	border: none;
+	outline: none;
+	
+	image: url(:/Resources/Img/taskCompleteButton.svg);
+	background-color: rgba(0,0,0,0);
+}
+
+QPushButton:hover#taskCompleteButton_11{
+	margin-top: -2px;
+}
+
+
+QPushButton:pressed#taskCompleteButton_11{
+	margin-top: -4px;
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="taskDismissButton_11">
+           <property name="geometry">
+            <rect>
+             <x>560</x>
+             <y>0</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton#taskDismissButton_11{
+	border: none;
+	outline: none;
+	
+	image: url(:/Resources/Img/taskCloseButton.svg);
+
+	background-color: rgba(0,0,0,0);
+}
+
+QPushButton:hover#taskDismissButton_11{
+	margin-top: -2px;
+}
+
+
+QPushButton:pressed#taskDismissButton_11{
+	margin-top: -4px;
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="taskBottomOpenButton_11">
+           <property name="geometry">
+            <rect>
+             <x>285</x>
+             <y>150</y>
+             <width>41</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton#taskBottomOpenButton_11{
+	border: none;
+	outline: none;
+	
+	image: url(:/Resources/Img/pullDown.png);
+	background-color: rgba(0,0,0,0);
+}
+
+QPushButton:hover#taskBottomOpenButton_11{
+	margin-bottom: 2px;
+}
+
+
+QPushButton:pressed#taskBottomOpenButton_11{
+	margin-bottom: 4px;
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QWidget" name="seperateBar_36" native="true">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>60</y>
+             <width>260</width>
+             <height>2</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(48, 98, 156);;</string>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="taskCard_4" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>133</width>
+            <height>168</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: white;
+border-radius:12px;</string>
+          </property>
+          <widget class="QLabel" name="userName_147">
+           <property name="geometry">
+            <rect>
+             <x>14</x>
+             <y>7</y>
+             <width>271</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(146, 146, 146);</string>
+           </property>
+           <property name="text">
+            <string>Complete figma UI design and assign team tasks</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QWidget" name="widget_38" native="true">
+           <property name="geometry">
+            <rect>
+             <x>14</x>
+             <y>74</y>
+             <width>12</width>
+             <height>12</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image: url(:/Resources/Img/bulletPoint.png);</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_148">
+           <property name="geometry">
+            <rect>
+             <x>31</x>
+             <y>67</y>
+             <width>251</width>
+             <height>43</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(200, 200, 200);</string>
+           </property>
+           <property name="text">
+            <string>Complete figma UI design and assign team tasks</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QWidget" name="widget_39" native="true">
+           <property name="geometry">
+            <rect>
+             <x>14</x>
+             <y>120</y>
+             <width>12</width>
+             <height>12</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image: url(:/Resources/Img/bulletPoint.png);</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_149">
+           <property name="geometry">
+            <rect>
+             <x>31</x>
+             <y>113</y>
+             <width>251</width>
+             <height>43</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(200, 200, 200);</string>
+           </property>
+           <property name="text">
+            <string>Complete figma UI design and assign team tasks</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QWidget" name="widget_40" native="true">
+           <property name="geometry">
+            <rect>
+             <x>329</x>
+             <y>120</y>
+             <width>12</width>
+             <height>12</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image: url(:/Resources/Img/bulletPoint.png);</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_150">
+           <property name="geometry">
+            <rect>
+             <x>346</x>
+             <y>113</y>
+             <width>251</width>
+             <height>43</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(200, 200, 200);</string>
+           </property>
+           <property name="text">
+            <string>Complete figma UI design and assign team tasks</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QProgressBar" name="progressBar_13">
+           <property name="geometry">
+            <rect>
+             <x>293</x>
+             <y>40</y>
+             <width>291</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QProgressBar:horizontal {
+	border-radius: 8px;
+	background: rgb(245, 245, 245);
+	padding: 0px;
+}
+
+QProgressBar::chunk:horizontal {
+	border-radius: 8px;
+	background: qlineargradient(	x1: 0, y1: 0,
+														x2: 0, y2: 1, 
+														stop: 0 rgb(48, 98, 156), 
+														stop: 1 rgb(54, 111, 176));
+}</string>
+           </property>
+           <property name="value">
+            <number>24</number>
+           </property>
+           <property name="textVisible">
+            <bool>false</bool>
+           </property>
+           <property name="invertedAppearance">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <widget class="QWidget" name="seperateBar_40" native="true">
+           <property name="geometry">
+            <rect>
+             <x>303</x>
+             <y>52</y>
+             <width>2</width>
+             <height>48</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(48, 98, 156);;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_151">
+           <property name="geometry">
+            <rect>
+             <x>308</x>
+             <y>53</y>
+             <width>101</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(140, 140, 140);
+background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>Task created</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_152">
+           <property name="geometry">
+            <rect>
+             <x>310</x>
+             <y>71</y>
+             <width>101</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(180, 180, 180);
+background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>29.12.21</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_153">
+           <property name="geometry">
+            <rect>
+             <x>310</x>
+             <y>85</y>
+             <width>41</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(180, 180, 180);
+background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>17:25</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_154">
+           <property name="geometry">
+            <rect>
+             <x>499</x>
+             <y>55</y>
+             <width>101</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(140, 140, 140);
+background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>Reminder</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_155">
+           <property name="geometry">
+            <rect>
+             <x>501</x>
+             <y>73</y>
+             <width>101</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(180, 180, 180);
+background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>02.01.22</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_156">
+           <property name="geometry">
+            <rect>
+             <x>501</x>
+             <y>87</y>
+             <width>41</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(180, 180, 180);
+background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>17:25</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QWidget" name="seperateBar_41" native="true">
+           <property name="geometry">
+            <rect>
+             <x>494</x>
+             <y>54</y>
+             <width>2</width>
+             <height>48</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(48, 98, 156);;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_157">
+           <property name="geometry">
+            <rect>
+             <x>300</x>
+             <y>12</y>
+             <width>51</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(205, 205, 205);
+background-color:none;</string>
+           </property>
+           <property name="text">
+            <string>Due by</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="userName_158">
+           <property name="geometry">
+            <rect>
+             <x>355</x>
+             <y>16</y>
+             <width>151</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(103, 215, 84);</string>
+           </property>
+           <property name="text">
+            <string>Wednesday 12:30</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="taskCompleteButton_13">
+           <property name="geometry">
+            <rect>
+             <x>509</x>
+             <y>0</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton#taskCompleteButton_13{
+	border: none;
+	outline: none;
+	
+	image: url(:/Resources/Img/taskCompleteButton.svg);
+	background-color: rgba(0,0,0,0);
+}
+
+QPushButton:hover#taskCompleteButton_13{
+	margin-top: -2px;
+}
+
+
+QPushButton:pressed#taskCompleteButton_13{
+	margin-top: -4px;
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="taskDismissButton_13">
+           <property name="geometry">
+            <rect>
+             <x>560</x>
+             <y>0</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton#taskDismissButton_13{
+	border: none;
+	outline: none;
+	
+	image: url(:/Resources/Img/taskCloseButton.svg);
+
+	background-color: rgba(0,0,0,0);
+}
+
+QPushButton:hover#taskDismissButton_13{
+	margin-top: -2px;
+}
+
+
+QPushButton:pressed#taskDismissButton_13{
+	margin-top: -4px;
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="taskBottomOpenButton_13">
+           <property name="geometry">
+            <rect>
+             <x>285</x>
+             <y>150</y>
+             <width>41</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton#taskBottomOpenButton_13{
+	border: none;
+	outline: none;
+	
+	image: url(:/Resources/Img/pullDown.png);
+	background-color: rgba(0,0,0,0);
+}
+
+QPushButton:hover#taskBottomOpenButton_13{
+	margin-bottom: 2px;
+}
+
+
+QPushButton:pressed#taskBottomOpenButton_13{
+	margin-bottom: 4px;
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QWidget" name="seperateBar_42" native="true">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>60</y>
+             <width>260</width>
+             <height>2</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(48, 98, 156);;</string>
+           </property>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </widget>
    <zorder>sideBar</zorder>
    <zorder>upperWidget</zorder>
    <zorder>gridLayoutWidget</zorder>
@@ -1638,11 +4293,11 @@ QPushButton:pressed#buttonOverview{
    <zorder>upperMinimize</zorder>
    <zorder>upperTime</zorder>
    <zorder>upperToDoLogo</zorder>
-   <zorder>taskCard</zorder>
    <zorder>sideMenuTasks</zorder>
    <zorder>sideMenuSettings</zorder>
    <zorder>sideMenuCredits</zorder>
    <zorder>sideMenuOverview</zorder>
+   <zorder>scrollArea</zorder>
   </widget>
  </widget>
  <resources/>
