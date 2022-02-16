@@ -12,7 +12,7 @@ MainWindow::MainWindow(QWidget *parent):QMainWindow(parent),ui(new Ui::MainWindo
     this->setFixedSize(1280,800);
 
     time = new Clock(this);
-    connect(time, SIGNAL(getTime(int,int)), this, SLOT(onTimeChanged(int,int)));
+    connect(time, SIGNAL(getTime(int,int,int,int,int)), this, SLOT(onTimeChanged(int,int,int,int,int)));
     time->start();
 
     //Varbūt ir iespējams šo ar "findChild" ciklu kaut kādā veidā izdarīt, lai pēc kārtas izpildās effect izveidošana un pēc tam tās izvade widgetam.
@@ -86,7 +86,20 @@ void MainWindow::on_upperMinimize_clicked(){
     this->setWindowState(Qt::WindowMinimized);
 }
 
-void MainWindow::onTimeChanged(int Hours, int Minutes)
+void MainWindow::onTimeChanged(int Hours, int Minutes, int Day, int Month, int Year)
 {
-    ui->upperTime->setText(QString("%1:%2").arg(QString::number(Hours, 10), QString::number(Minutes, 10)));
+    QList<QString> timesArray = {
+        QString::number(Hours, 10),
+        QString::number(Minutes, 10),
+        QString::number(Day, 10),
+        QString::number(Month+1, 10),
+        QString::number(Year+1900, 10)
+    };
+    for(int x=0; x < timesArray.count(); x++) {
+        if(timesArray[x].toDouble() < 10) {
+            timesArray[x] = "0" + timesArray[x];
+        }
+    }
+    ui->upperTime->setText(QString("%1:%2").arg(timesArray[0], timesArray[1]));
+    ui->upperDate->setText(QString("%1.%2.%3").arg(timesArray[2], timesArray[3], timesArray[4]));
 }

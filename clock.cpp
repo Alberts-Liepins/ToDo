@@ -18,7 +18,7 @@ void Clock::run()
         time_t now = time(0);
         tm *ltm = localtime(&now);
         mutex.unlock();
-        emit getTime(ltm->tm_hour, ltm->tm_min);
+        emit getTime(ltm->tm_hour, ltm->tm_min, ltm->tm_mday, ltm->tm_mon, ltm->tm_year);
         this->sleep(1);
     }
 }
