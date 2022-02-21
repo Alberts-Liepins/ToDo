@@ -11,7 +11,7 @@ public:
     void run();
     bool stop = false;
 signals:
-    void getTime(int, int);
+    void getTime(int, int, int, int, int);
 };
 
 #endif // CLOCK_H

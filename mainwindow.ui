@@ -13,129 +13,13 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <property name="styleSheet">
     <string notr="true"/>
    </property>
-   <widget class="QPushButton" name="upperClose">
-    <property name="geometry">
-     <rect>
-      <x>1192</x>
-      <y>5</y>
-      <width>80</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>X</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="upperMinimize">
-    <property name="geometry">
-     <rect>
-      <x>1005</x>
-      <y>5</y>
-      <width>80</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>_</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="upperMaximize">
-    <property name="geometry">
-     <rect>
-      <x>1096</x>
-      <y>5</y>
-      <width>80</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>O</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="upperTime">
-    <property name="geometry">
-     <rect>
-      <x>631</x>
-      <y>2</y>
-      <width>81</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>22</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>00:00</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="title">
-    <property name="geometry">
-     <rect>
-      <x>42</x>
-      <y>0</y>
-      <width>118</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>24</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>ToDo++</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="upperInfo">
-    <property name="geometry">
-     <rect>
-      <x>970</x>
-      <y>4</y>
-      <width>28</width>
-      <height>28</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="upperMenu">
-    <property name="geometry">
-     <rect>
-      <x>8</x>
-      <y>4</y>
-      <width>28</width>
-      <height>28</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="upperDate">
-    <property name="geometry">
-     <rect>
-      <x>703</x>
-      <y>6</y>
-      <width>101</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>16</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>12.12.2021</string>
-    </property>
-   </widget>
    <widget class="QWidget" name="upperWidget" native="true">
     <property name="geometry">
      <rect>
@@ -147,205 +31,36 @@
     </property>
     <property name="styleSheet">
      <string notr="true">background: #FDFDFD;
-border: 5px solid rgba(0, 0, 0, 0.1);
-
-border-right: 0px solid white;
-border-left: 0px solid white;
-border-top: 0px solid white;</string>
-    </property>
-   </widget>
-   <widget class="QWidget" name="leftMenuWidget" native="true">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>40</y>
-      <width>251</width>
-      <height>761</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border: 5px solid rgba(0, 0, 0, 0.1);
-
-border-top: 0px solid white;</string>
-    </property>
-    <widget class="QFrame" name="leftMenuFrame">
-     <property name="geometry">
-      <rect>
-       <x>5</x>
-       <y>0</y>
-       <width>241</width>
-       <height>111</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">border: 5px solid rgba(0, 0, 0, 0.1);
-
-border-top: 0px solid white;
-border-right: 0px solid white;
-border-left: 0px solid white;</string>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::StyledPanel</enum>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Raised</enum>
-     </property>
-     <widget class="QLabel" name="label">
-      <property name="geometry">
-       <rect>
-        <x>90</x>
-        <y>37</y>
-        <width>101</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>16</pointsize>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border: 0px solid;
-color:rgba(160, 160, 160, 1);</string>
-      </property>
-      <property name="text">
-       <string>NickName</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_2">
-      <property name="geometry">
-       <rect>
-        <x>15</x>
-        <y>20</y>
-        <width>64</width>
-        <height>64</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border:0px;
-color: black;
-background-color: grey;
-border-radius: 32px;</string>
-      </property>
-      <property name="text">
-       <string>BILDE</string>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QFrame" name="leftMenuFrame_2">
-     <property name="geometry">
-      <rect>
-       <x>25</x>
-       <y>120</y>
-       <width>201</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-
-
-border-right: 0px solid white;
-border-left: 0px solid white;</string>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::StyledPanel</enum>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Raised</enum>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QLabel" name="leftMenuMainOptions">
-    <property name="geometry">
-     <rect>
-      <x>58</x>
-      <y>157</y>
-      <width>141</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>16</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color:rgba(160, 160, 160, 1);
-border-bottom: 2px solid;</string>
-    </property>
-    <property name="text">
-     <string>Main Options</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="leftMenuTaskLogo">
-    <property name="geometry">
-     <rect>
-      <x>640</x>
-      <y>320</y>
-      <width>71</width>
-      <height>101</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="buttonMenu">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>220</y>
-      <width>261</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>16</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton#buttonMenu
-{
-	background-image: url(&quot;:./Resources/Img/Union.png&quot;);
-	background-repeat: no-repeat;
-	border: 0px solid white;
-	color: rgba(160, 160, 160, 1);
-	border-radius: 10px;
-}
-
-QPushButton:hover#buttonMenu
-{
-	border-top-left-radius: 0px;
-	border-bottom-left-radius: 0px;
-    border-left: 6px solid rgba(59, 64, 65, 1);
-    background-color: rgba(225, 69, 69, 1);
-	color: rgba(59, 64, 65, 1);
-}</string>
-    </property>
-    <property name="text">
-     <string>Menu</string>
+border-bottom: 3px solid rgba(0,0,0,0.07)</string>
     </property>
    </widget>
    <widget class="QWidget" name="gridLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>280</x>
-      <y>60</y>
-      <width>641</width>
-      <height>181</height>
+      <x>240</x>
+      <y>40</y>
+      <width>681</width>
+      <height>217</height>
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout">
+     <property name="leftMargin">
+      <number>30</number>
+     </property>
+     <property name="topMargin">
+      <number>30</number>
+     </property>
+     <property name="rightMargin">
+      <number>30</number>
+     </property>
+     <property name="bottomMargin">
+      <number>30</number>
+     </property>
      <item row="1" column="1">
       <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
        <item>
         <widget class="QWidget" name="statActive" native="true">
          <property name="minimumSize">
@@ -501,20 +216,1433 @@ border-radius: 7px;</string>
      </item>
     </layout>
    </widget>
-   <zorder>leftMenuWidget</zorder>
+   <widget class="QPushButton" name="upperMaximize">
+    <property name="geometry">
+     <rect>
+      <x>1210</x>
+      <y>8</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#upperMaximize{
+	image: url(:/Resources/Img/Maximize.png);
+	background-color: rgba(0,0,0,0);
+}
+
+QPushButton:hover#upperMaximize{
+	background-color:rgb(25,52,82);
+	border-radius:15px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="upperMinimize">
+    <property name="geometry">
+     <rect>
+      <x>1181</x>
+      <y>8</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#upperMinimize{
+	image: url(:/Resources/Img/Minimize.png);
+	background-color: rgba(0,0,0,0);
+}
+
+QPushButton:hover#upperMinimize{
+	background-color:rgb(25,52,82);
+	border-radius:15px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="upperClose">
+    <property name="geometry">
+     <rect>
+      <x>1240</x>
+      <y>8</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#upperClose{
+	image: url(:/Resources/Img/Close.png);
+	background-color: rgba(0,0,0,0);
+}
+
+QPushButton:hover#upperClose{
+	background-color:rgb(25,52,82);
+	border-radius:15px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="upperBurgerMenu">
+    <property name="geometry">
+     <rect>
+      <x>1119</x>
+      <y>9</y>
+      <width>27</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#upperBurgerMenu{
+	image: url(:/Resources/Img/BurgerMenu.png);
+	background-color: rgba(0,0,0,0);
+}
+
+QPushButton:hover#upperBurgerMenu{
+	margin-top: -2px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="upperInfoButton">
+    <property name="geometry">
+     <rect>
+      <x>1150</x>
+      <y>9</y>
+      <width>26</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#upperInfoButton{
+	image: url(:/Resources/Img/info.png);
+	background-color: rgba(0,0,0,0);
+}
+
+QPushButton:hover#upperInfoButton{
+	margin-top: -2px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="UpperMenu">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#UpperMenu{
+	image: url(:/Resources/Img/Menu);
+	background-color: rgba(0,0,0,0);
+}
+
+QPushButton:hover#UpperMenu{
+	margin-top: -2px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="upperToDoLogo">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>3</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>22</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(210, 210, 210);</string>
+    </property>
+    <property name="text">
+     <string>ToDo++</string>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="upperTime">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>10</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>23</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(200, 200, 200);</string>
+    </property>
+    <property name="text">
+     <string>00:00</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="upperDate">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>14</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(210, 210, 210);</string>
+    </property>
+    <property name="text">
+     <string>12.12.2021</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="sideBar" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>50</y>
+      <width>231</width>
+      <height>751</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: #FFFFFF;
+border-right: 3px solid rgba(0,0,0,0.07);</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="userImage" native="true">
+    <property name="geometry">
+     <rect>
+      <x>14</x>
+      <y>64</y>
+      <width>47</width>
+      <height>47</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/Resources/Img/orangutanImageCropped.png);</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="userName">
+    <property name="geometry">
+     <rect>
+      <x>73</x>
+      <y>63</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <italic>true</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(200, 200, 200);</string>
+    </property>
+    <property name="text">
+     <string>MechanicalCore</string>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QWidget" name="seperateBar" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>124</y>
+      <width>229</width>
+      <height>3</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(250, 250, 250);</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="userName_2">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>136</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>18</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(210, 210, 210);</string>
+    </property>
+    <property name="text">
+     <string>Menu</string>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QWidget" name="seperateBar_2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>170</y>
+      <width>219</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(250, 250, 250);</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="seperateBar_3" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>414</y>
+      <width>219</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(250, 250, 250);</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="taskCard" native="true">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>240</y>
+      <width>611</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>133</width>
+      <height>143</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: white;
+border-radius:12px;</string>
+    </property>
+    <widget class="QLabel" name="userName_3">
+     <property name="geometry">
+      <rect>
+       <x>14</x>
+       <y>7</y>
+       <width>271</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(146, 146, 146);</string>
+     </property>
+     <property name="text">
+      <string>Complete figma UI design and assign team tasks</string>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>14</x>
+       <y>74</y>
+       <width>12</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/Resources/Img/bulletPoint.png);</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="userName_4">
+     <property name="geometry">
+      <rect>
+       <x>31</x>
+       <y>67</y>
+       <width>251</width>
+       <height>43</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(200, 200, 200);</string>
+     </property>
+     <property name="text">
+      <string>Complete figma UI design and assign team tasks</string>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QWidget" name="widget_2" native="true">
+     <property name="geometry">
+      <rect>
+       <x>14</x>
+       <y>120</y>
+       <width>12</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/Resources/Img/bulletPoint.png);</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="userName_5">
+     <property name="geometry">
+      <rect>
+       <x>31</x>
+       <y>113</y>
+       <width>251</width>
+       <height>43</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(200, 200, 200);</string>
+     </property>
+     <property name="text">
+      <string>Complete figma UI design and assign team tasks</string>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QWidget" name="widget_3" native="true">
+     <property name="geometry">
+      <rect>
+       <x>329</x>
+       <y>120</y>
+       <width>12</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/Resources/Img/bulletPoint.png);</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="userName_6">
+     <property name="geometry">
+      <rect>
+       <x>346</x>
+       <y>113</y>
+       <width>251</width>
+       <height>43</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(200, 200, 200);</string>
+     </property>
+     <property name="text">
+      <string>Complete figma UI design and assign team tasks</string>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QProgressBar" name="progressBar">
+     <property name="geometry">
+      <rect>
+       <x>293</x>
+       <y>40</y>
+       <width>291</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QProgressBar:horizontal {
+	border-radius: 8px;
+	background: rgb(245, 245, 245);
+	padding: 0px;
+}
+
+QProgressBar::chunk:horizontal {
+	border-radius: 8px;
+	background: qlineargradient(	x1: 0, y1: 0,
+														x2: 0, y2: 1, 
+														stop: 0 rgb(48, 98, 156), 
+														stop: 1 rgb(54, 111, 176));
+}</string>
+     </property>
+     <property name="value">
+      <number>24</number>
+     </property>
+     <property name="textVisible">
+      <bool>false</bool>
+     </property>
+     <property name="invertedAppearance">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QWidget" name="seperateBar_4" native="true">
+     <property name="geometry">
+      <rect>
+       <x>303</x>
+       <y>52</y>
+       <width>2</width>
+       <height>48</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(48, 98, 156);;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="userName_7">
+     <property name="geometry">
+      <rect>
+       <x>308</x>
+       <y>53</y>
+       <width>101</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(140, 140, 140);
+background-color: rgba(255, 255, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>Task created</string>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="userName_8">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>71</y>
+       <width>101</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(180, 180, 180);
+background-color: rgba(255, 255, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>29.12.21</string>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="userName_9">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>85</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(180, 180, 180);
+background-color: rgba(255, 255, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>17:25</string>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="userName_10">
+     <property name="geometry">
+      <rect>
+       <x>499</x>
+       <y>55</y>
+       <width>101</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(140, 140, 140);
+background-color: rgba(255, 255, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>Reminder</string>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="userName_11">
+     <property name="geometry">
+      <rect>
+       <x>501</x>
+       <y>73</y>
+       <width>101</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(180, 180, 180);
+background-color: rgba(255, 255, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>02.01.22</string>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="userName_12">
+     <property name="geometry">
+      <rect>
+       <x>501</x>
+       <y>87</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(180, 180, 180);
+background-color: rgba(255, 255, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>17:25</string>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QWidget" name="seperateBar_5" native="true">
+     <property name="geometry">
+      <rect>
+       <x>494</x>
+       <y>54</y>
+       <width>2</width>
+       <height>48</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(48, 98, 156);;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="userName_13">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>12</y>
+       <width>51</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(205, 205, 205);</string>
+     </property>
+     <property name="text">
+      <string>Due by</string>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="userName_14">
+     <property name="geometry">
+      <rect>
+       <x>355</x>
+       <y>16</y>
+       <width>151</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(103, 215, 84);</string>
+     </property>
+     <property name="text">
+      <string>Wednesday 12:30</string>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="taskCompleteButton">
+     <property name="geometry">
+      <rect>
+       <x>509</x>
+       <y>0</y>
+       <width>51</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#taskCompleteButton{
+	border: none;
+	outline: none;
+	
+	image: url(:/Resources/Img/taskCompleteButton.svg);
+	background-color: rgba(0,0,0,0);
+}
+
+QPushButton:hover#taskCompleteButton{
+	margin-top: -2px;
+}
+
+
+QPushButton:pressed#taskCompleteButton{
+	margin-top: -4px;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="taskDismissButton">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>0</y>
+       <width>51</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#taskDismissButton{
+	border: none;
+	outline: none;
+	
+	image: url(:/Resources/Img/taskCloseButton.svg);
+
+	background-color: rgba(0,0,0,0);
+}
+
+QPushButton:hover#taskDismissButton{
+	margin-top: -2px;
+}
+
+
+QPushButton:pressed#taskDismissButton{
+	margin-top: -4px;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="taskBottomOpenButton">
+     <property name="geometry">
+      <rect>
+       <x>285</x>
+       <y>150</y>
+       <width>41</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#taskBottomOpenButton{
+	border: none;
+	outline: none;
+	
+	image: url(:/Resources/Img/pullDown.png);
+	background-color: rgba(0,0,0,0);
+}
+
+QPushButton:hover#taskBottomOpenButton{
+	margin-bottom: 2px;
+}
+
+
+QPushButton:pressed#taskBottomOpenButton{
+	margin-bottom: 4px;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QWidget" name="seperateBar_6" native="true">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>260</width>
+       <height>2</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(48, 98, 156);;</string>
+     </property>
+    </widget>
+    <zorder>userName_3</zorder>
+    <zorder>widget</zorder>
+    <zorder>userName_4</zorder>
+    <zorder>widget_2</zorder>
+    <zorder>userName_5</zorder>
+    <zorder>widget_3</zorder>
+    <zorder>userName_6</zorder>
+    <zorder>seperateBar_4</zorder>
+    <zorder>userName_7</zorder>
+    <zorder>userName_8</zorder>
+    <zorder>userName_9</zorder>
+    <zorder>userName_10</zorder>
+    <zorder>userName_11</zorder>
+    <zorder>userName_12</zorder>
+    <zorder>seperateBar_5</zorder>
+    <zorder>userName_13</zorder>
+    <zorder>userName_14</zorder>
+    <zorder>taskCompleteButton</zorder>
+    <zorder>taskDismissButton</zorder>
+    <zorder>taskBottomOpenButton</zorder>
+    <zorder>progressBar</zorder>
+    <zorder>seperateBar_6</zorder>
+   </widget>
+   <widget class="QFrame" name="sideMenuTasks">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>240</y>
+      <width>281</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QWidget" name="ImageTasks" native="true">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>12</x>
+       <y>8</y>
+       <width>35</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/Resources/Img/tasksPage.png);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="buttonTasks">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>281</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::NoContextMenu</enum>
+     </property>
+     <property name="acceptDrops">
+      <bool>true</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#buttonTasks{
+	border: none;
+	outline: none;
+	margin-right: 96px;
+	
+	border-top-left-radius: 0px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-	radius: 0px;
+	
+	color: rgb(200, 200, 200);
+
+	background-color: rgb(255,255,255);
+}
+
+QPushButton:hover#buttonTasks{
+	margin-right: 40px;
+	background-color:rgb(25,52,82);
+}
+
+
+QPushButton:pressed#buttonTasks{
+	margin-right: 25px;
+	background-color:rgb(21,48,79);
+}</string>
+     </property>
+     <property name="text">
+      <string>Tasks</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <zorder>buttonTasks</zorder>
+    <zorder>ImageTasks</zorder>
+   </widget>
+   <widget class="QFrame" name="sideMenuSettings">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>294</y>
+      <width>281</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QWidget" name="ImageSettings" native="true">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>12</x>
+       <y>8</y>
+       <width>35</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/Resources/Img/settings.png);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="buttonSettings">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>281</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::NoContextMenu</enum>
+     </property>
+     <property name="acceptDrops">
+      <bool>true</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#buttonSettings{
+	border: none;
+	outline: none;
+	margin-right: 68px;
+	
+	border-top-left-radius: 0px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-	radius: 0px;
+	
+	color: rgb(200, 200, 200);
+
+	background-color: rgb(255,255,255);
+}
+
+QPushButton:hover#buttonSettings{
+	margin-right: 40px;
+	background-color:rgb(25,52,82);
+}
+
+
+QPushButton:pressed#buttonSettings{
+	margin-right: 25px;
+	background-color:rgb(21,48,79);
+}</string>
+     </property>
+     <property name="text">
+      <string>Settings</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <zorder>buttonSettings</zorder>
+    <zorder>ImageSettings</zorder>
+   </widget>
+   <widget class="QFrame" name="sideMenuCredits">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>348</y>
+      <width>281</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QWidget" name="ImageCredits" native="true">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>12</x>
+       <y>8</y>
+       <width>35</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/Resources/Img/information.png);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="buttonCredits">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>281</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::NoContextMenu</enum>
+     </property>
+     <property name="acceptDrops">
+      <bool>true</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#buttonCredits{
+	border: none;
+	outline: none;
+	margin-right: 75px;
+	
+	border-top-left-radius: 0px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-	radius: 0px;
+	
+	color: rgb(200, 200, 200);
+
+	background-color: rgb(255,255,255);
+}
+
+QPushButton:hover#buttonCredits{
+	margin-right: 40px;
+	background-color:rgb(25,52,82);
+}
+
+
+QPushButton:pressed#buttonCredits{
+	margin-right: 25px;
+	background-color:rgb(21,48,79);
+}</string>
+     </property>
+     <property name="text">
+      <string>Credits</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <zorder>buttonCredits</zorder>
+    <zorder>ImageCredits</zorder>
+   </widget>
+   <widget class="QFrame" name="sideMenuOverview">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>186</y>
+      <width>281</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QWidget" name="imageOverview" native="true">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>12</x>
+       <y>8</y>
+       <width>35</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/Resources/Img/mainMenu.png);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="buttonOverview">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>281</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::NoContextMenu</enum>
+     </property>
+     <property name="acceptDrops">
+      <bool>true</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#buttonOverview{
+	border: none;
+	outline: none;
+	margin-right: 56px;
+	
+	border-top-left-radius: 0px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-	radius: 0px;
+	
+	color: rgb(200, 200, 200);
+
+	background-color: rgb(255,255,255);
+}
+
+QPushButton:hover#buttonOverview{
+	margin-left: 0px;
+	margin-right: 40px;
+	background-color:rgb(25,52,82);
+}
+
+
+QPushButton:pressed#buttonOverview{
+	margin-left: 0px;
+	margin-right: 25px;
+	background-color:rgb(21,48,79);
+}</string>
+     </property>
+     <property name="text">
+      <string>Overview</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <zorder>buttonOverview</zorder>
+    <zorder>imageOverview</zorder>
+   </widget>
+   <zorder>sideBar</zorder>
    <zorder>upperWidget</zorder>
-   <zorder>upperClose</zorder>
-   <zorder>upperMinimize</zorder>
-   <zorder>upperMaximize</zorder>
-   <zorder>upperTime</zorder>
-   <zorder>title</zorder>
-   <zorder>upperInfo</zorder>
-   <zorder>upperMenu</zorder>
-   <zorder>upperDate</zorder>
-   <zorder>leftMenuMainOptions</zorder>
-   <zorder>leftMenuTaskLogo</zorder>
-   <zorder>buttonMenu</zorder>
    <zorder>gridLayoutWidget</zorder>
+   <zorder>userImage</zorder>
+   <zorder>userName</zorder>
+   <zorder>seperateBar</zorder>
+   <zorder>userName_2</zorder>
+   <zorder>seperateBar_2</zorder>
+   <zorder>seperateBar_3</zorder>
+   <zorder>upperBurgerMenu</zorder>
+   <zorder>UpperMenu</zorder>
+   <zorder>upperClose</zorder>
+   <zorder>upperDate</zorder>
+   <zorder>upperInfoButton</zorder>
+   <zorder>upperMaximize</zorder>
+   <zorder>upperMinimize</zorder>
+   <zorder>upperTime</zorder>
+   <zorder>upperToDoLogo</zorder>
+   <zorder>taskCard</zorder>
+   <zorder>sideMenuTasks</zorder>
+   <zorder>sideMenuSettings</zorder>
+   <zorder>sideMenuCredits</zorder>
+   <zorder>sideMenuOverview</zorder>
   </widget>
  </widget>
  <resources/>

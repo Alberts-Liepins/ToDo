@@ -26,9 +26,8 @@ private slots:
 
     void on_upperMinimize_clicked();
 
-
 public slots:
-    void onTimeChanged(int, int);
+    void onTimeChanged(int, int, int, int, int);
 
 private:
     Ui::MainWindow *ui;

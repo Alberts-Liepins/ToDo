@@ -12,38 +12,40 @@ MainWindow::MainWindow(QWidget *parent):QMainWindow(parent),ui(new Ui::MainWindo
     this->setFixedSize(1280,800);
 
     time = new Clock(this);
-    connect(time, SIGNAL(getTime(int,int)), this, SLOT(onTimeChanged(int,int)));
+    connect(time, SIGNAL(getTime(int,int,int,int,int)), this, SLOT(onTimeChanged(int,int,int,int,int)));
     time->start();
 
     //Varbūt ir iespējams šo ar "findChild" ciklu kaut kādā veidā izdarīt, lai pēc kārtas izpildās effect izveidošana un pēc tam tās izvade widgetam.
     //pagaidām ir šādi, tas strādātu.
     setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
-    QGraphicsDropShadowEffect *effect = new QGraphicsDropShadowEffect;
-    effect->setYOffset(-3);
-    effect->setXOffset(-3);
-    effect->setColor(QColor(225, 69, 69, 255));
+    QGraphicsDropShadowEffect *effect1 = new QGraphicsDropShadowEffect;effect1->setYOffset(-2);effect1->setXOffset(-2);effect1->setColor(QColor(48, 98, 156, 50));effect1->setBlurRadius(30);
+    ui->statActive->setGraphicsEffect(effect1);
 
-    ui->statActive->setGraphicsEffect(effect);
-    QGraphicsDropShadowEffect *effect2 = new QGraphicsDropShadowEffect;
-    effect2->setYOffset(-3);
-    effect2->setXOffset(-3);
-    effect2->setColor(QColor(225, 69, 69, 255));
-
+    QGraphicsDropShadowEffect *effect2 = new QGraphicsDropShadowEffect;effect2->setYOffset(-2);effect2->setXOffset(-2);effect2->setColor(QColor(48, 98, 156, 50));effect2->setBlurRadius(30);
     ui->statCompleted->setGraphicsEffect(effect2);
 
-    QGraphicsDropShadowEffect *effect3 = new QGraphicsDropShadowEffect;
-    effect3->setYOffset(-3);
-    effect3->setXOffset(-3);
-    effect3->setColor(QColor(225, 69, 69, 255));
-
+    QGraphicsDropShadowEffect *effect3 = new QGraphicsDropShadowEffect;effect3->setYOffset(-2);effect3->setXOffset(-2);effect3->setColor(QColor(48, 98, 156, 50));effect3->setBlurRadius(30);
     ui->statsTasks->setGraphicsEffect(effect3);
 
-    QGraphicsDropShadowEffect *effect4 = new QGraphicsDropShadowEffect;
-    effect4->setYOffset(-3);
-    effect4->setXOffset(-3);
-    effect4->setColor(QColor(225, 69, 69, 255));
-
+    QGraphicsDropShadowEffect *effect4 = new QGraphicsDropShadowEffect;effect4->setYOffset(-2);effect4->setXOffset(-2);effect4->setColor(QColor(48, 98, 156, 50));effect4->setBlurRadius(30);
     ui->statOverdue->setGraphicsEffect(effect4);
+
+    QGraphicsDropShadowEffect *effect5 = new QGraphicsDropShadowEffect;effect5->setYOffset(-2);effect5->setXOffset(-2);effect5->setColor(QColor(25,52,82, 50));effect5->setBlurRadius(30);
+    ui->sideBar->setGraphicsEffect(effect5);
+
+    QGraphicsDropShadowEffect *effect6 = new QGraphicsDropShadowEffect;effect6->setYOffset(-2);effect6->setXOffset(-2);effect6->setColor(QColor(25,52,82, 50));effect6->setBlurRadius(30);
+    ui->upperWidget->setGraphicsEffect(effect6);
+
+    QGraphicsDropShadowEffect *effect7 = new QGraphicsDropShadowEffect;effect7->setYOffset(-2);effect7->setXOffset(-2);effect7->setColor(QColor(25,52,82, 50));effect7->setBlurRadius(30);
+    ui->userImage->setGraphicsEffect(effect7);
+
+    QGraphicsDropShadowEffect *effect8 = new QGraphicsDropShadowEffect;effect8->setYOffset(-2);effect8->setXOffset(-2);effect8->setColor(QColor(25,52,82, 50));effect8->setBlurRadius(30);
+    ui->taskCard->setGraphicsEffect(effect8);
+
+    QGraphicsDropShadowEffect *effect9 = new QGraphicsDropShadowEffect;effect9->setYOffset(-3);effect9->setXOffset(-3);effect9->setColor(QColor(48, 98, 156, 70));effect9->setBlurRadius(20);
+    ui->taskCard->setGraphicsEffect(effect9);
+
+
 }
 MainWindow::~MainWindow(){
     time->stop = true;
@@ -84,7 +86,20 @@ void MainWindow::on_upperMinimize_clicked(){
     this->setWindowState(Qt::WindowMinimized);
 }
 
-void MainWindow::onTimeChanged(int Hours, int Minutes)
+void MainWindow::onTimeChanged(int Hours, int Minutes, int Day, int Month, int Year)
 {
-    ui->upperTime->setText(QString("%1:%2").arg(QString::number(Hours, 10), QString::number(Minutes, 10)));
+    QList<QString> timesArray = {
+        QString::number(Hours, 10),
+        QString::number(Minutes, 10),
+        QString::number(Day, 10),
+        QString::number(Month+1, 10),
+        QString::number(Year+1900, 10)
+    };
+    for(int x=0; x < timesArray.count(); x++) {
+        if(timesArray[x].toDouble() < 10) {
+            timesArray[x] = "0" + timesArray[x];
+        }
+    }
+    ui->upperTime->setText(QString("%1:%2").arg(timesArray[0], timesArray[1]));
+    ui->upperDate->setText(QString("%1.%2.%3").arg(timesArray[2], timesArray[3], timesArray[4]));
 }
